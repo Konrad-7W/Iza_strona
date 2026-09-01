@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon Fryzjerski — 6 propozycji stylistycznych | Demo agencji</title>
+<meta name="description" content="Interaktywne demo 6 stylów strony dla salonu fryzjerskiego. Narzędzie prezentacyjne agencji web design.">
+
+<!-- ============================================================
+     JEDYNE ZALEŻNOŚCI ZEWNĘTRZNE: Google Fonts (CDN) + zdjęcia Unsplash
+     ============================================================ -->
+
+
+<style type="text/css">@font-face {font-family:'Playfair Display';font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:600;src:url(/cf-fonts/v/playfair-display/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(/cf-fonts/v/playfair-display/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Playfair Display';font-style:italic;font-weight:400;src:url(/cf-fonts/v/playfair-display/5.2.8/latin-ext/wght/italic.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:300;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:300;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:300;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:300;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:300;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:400;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:400;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:400;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:400;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:400;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:500;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:500;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:500;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:500;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:500;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:600;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:600;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:600;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:600;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Cormorant Garamond';font-style:normal;font-weight:600;src:url(/cf-fonts/v/cormorant-garamond/5.2.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:800;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:800;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:800;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:800;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:800;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:800;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:800;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:400;src:url(/cf-fonts/v/space-grotesk/5.2.10/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:400;src:url(/cf-fonts/v/space-grotesk/5.2.10/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:400;src:url(/cf-fonts/v/space-grotesk/5.2.10/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:500;src:url(/cf-fonts/v/space-grotesk/5.2.10/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:500;src:url(/cf-fonts/v/space-grotesk/5.2.10/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:500;src:url(/cf-fonts/v/space-grotesk/5.2.10/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:700;src:url(/cf-fonts/v/space-grotesk/5.2.10/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:700;src:url(/cf-fonts/v/space-grotesk/5.2.10/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Space Grotesk';font-style:normal;font-weight:700;src:url(/cf-fonts/v/space-grotesk/5.2.10/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:400;src:url(/cf-fonts/v/quicksand/5.2.10/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:400;src:url(/cf-fonts/v/quicksand/5.2.10/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:400;src:url(/cf-fonts/v/quicksand/5.2.10/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:500;src:url(/cf-fonts/v/quicksand/5.2.10/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:500;src:url(/cf-fonts/v/quicksand/5.2.10/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:500;src:url(/cf-fonts/v/quicksand/5.2.10/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:600;src:url(/cf-fonts/v/quicksand/5.2.10/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:600;src:url(/cf-fonts/v/quicksand/5.2.10/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:600;src:url(/cf-fonts/v/quicksand/5.2.10/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:700;src:url(/cf-fonts/v/quicksand/5.2.10/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:700;src:url(/cf-fonts/v/quicksand/5.2.10/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Quicksand';font-style:normal;font-weight:700;src:url(/cf-fonts/v/quicksand/5.2.10/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Dancing Script';font-style:normal;font-weight:500;src:url(/cf-fonts/v/dancing-script/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Dancing Script';font-style:normal;font-weight:500;src:url(/cf-fonts/v/dancing-script/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Dancing Script';font-style:normal;font-weight:500;src:url(/cf-fonts/v/dancing-script/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Dancing Script';font-style:normal;font-weight:700;src:url(/cf-fonts/v/dancing-script/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Dancing Script';font-style:normal;font-weight:700;src:url(/cf-fonts/v/dancing-script/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Dancing Script';font-style:normal;font-weight:700;src:url(/cf-fonts/v/dancing-script/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:400;src:url(/cf-fonts/v/oswald/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:400;src:url(/cf-fonts/v/oswald/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:400;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:400;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:400;src:url(/cf-fonts/v/oswald/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:500;src:url(/cf-fonts/v/oswald/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:500;src:url(/cf-fonts/v/oswald/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:500;src:url(/cf-fonts/v/oswald/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:500;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:500;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:600;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:600;src:url(/cf-fonts/v/oswald/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:600;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:600;src:url(/cf-fonts/v/oswald/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:600;src:url(/cf-fonts/v/oswald/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:700;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:700;src:url(/cf-fonts/v/oswald/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:700;src:url(/cf-fonts/v/oswald/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:700;src:url(/cf-fonts/v/oswald/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Oswald';font-style:normal;font-weight:700;src:url(/cf-fonts/v/oswald/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+
+<style>
+/* ============================================================
+   1. RESET + FUNDAMENT
+   Wspólne "rusztowanie" — każdy styl nadpisuje zmienne CSS
+   (kolory, fonty, promienie, odstępy), a dodatkowo ma własne
+   reguły strukturalne, dzięki czemu warianty wyglądają jak
+   zupełnie osobne projekty.
+   ============================================================ */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:inherit}
+
+:root{
+  --maxw:1180px;
+  --sp:96px;              /* pionowy "oddech" sekcji (whitespace) */
+  --bg:#0d0b09;--bg2:#15120e;--fg:#f3ead9;--muted:#b7a98c;
+  --accent:#d4af37;--accent2:#b08d57;--on-accent:#1a1408;
+  --card:#171310;--border:#d4af3733;--radius:8px;--btn-r:8px;
+  --font-h:'Playfair Display',serif;--font-b:'Inter',sans-serif;
+}
+body{font-family:var(--font-b);background:var(--bg);color:var(--fg);line-height:1.65;
+  transition:background .5s ease,color .5s ease}
+.container{max-width:var(--maxw);margin-inline:auto;padding-inline:24px}
+.section{padding-block:var(--sp)}
+.section--alt{background:var(--bg2)}
+h1,h2,h3,h4{font-family:var(--font-h);line-height:1.15;font-weight:600}
+h2{font-size:clamp(1.8rem,3.6vw,2.7rem);margin-bottom:12px}
+p{max-width:65ch}
+.center{text-align:center}
+.center p{margin-inline:auto}
+
+/* mały nagłówek-etykieta nad tytułami sekcji */
+.kicker{display:inline-block;font:600 12px/1 var(--font-b);letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.sec-head{margin-bottom:48px}
+.sec-head .sub{color:var(--muted);font-size:1.05rem}
+
+/* ---------- Przyciski CTA — duże, kontrastowe, czytelne (dostępność) ---------- */
+.btn{display:inline-block;padding:15px 30px;border-radius:var(--btn-r);
+  font:600 15px var(--font-b);letter-spacing:.03em;text-decoration:none;cursor:pointer;
+  border:2px solid transparent;transition:transform .25s,box-shadow .25s,background .25s,color .25s}
+.btn--primary{background:var(--accent);color:var(--on-accent)}
+.btn--primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px var(--accent)}
+.btn--ghost{border-color:var(--accent);color:var(--accent);background:transparent}
+.btn--ghost:hover{background:var(--accent);color:var(--on-accent)}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+
+/* ---------- Siatki i karty ---------- */
+.grid-2{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid-3{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid-4{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:30px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 22px 40px -18px rgba(0,0,0,.55)}
+
+/* ============================================================
+   2. STICKY HEADER AGENCJI — przełącznik 6 stylów
+   Celowo neutralny (ciemny), żeby nie "kłócił się" z żadnym
+   z prezentowanych wariantów — to warstwa narzędzia demo.
+   ============================================================ */
+.top{position:sticky;top:0;z-index:1000;background:#0c0c10f2;backdrop-filter:blur(10px);
+  border-bottom:1px solid #ffffff1f;color:#fff}
+.top__inner{display:flex;align-items:center;gap:18px;padding:10px 18px;max-width:1500px;margin-inline:auto}
+.top__brand{font:700 12px/1.3 'Inter';letter-spacing:.16em;text-transform:uppercase;color:#9a9aa5;white-space:nowrap}
+.top__brand b{color:#fff}
+.top__tabs{display:flex;gap:8px;overflow-x:auto;padding-block:4px;scrollbar-width:thin}
+.tab{flex:0 0 auto;border:1px solid #ffffff30;background:transparent;color:#d6d6de;
+  padding:8px 16px;border-radius:999px;font:500 13px 'Inter';cursor:pointer;transition:.25s;white-space:nowrap}
+.tab:hover{border-color:#fff;color:#fff}
+.tab.active{background:#fff;color:#101014;border-color:#fff;font-weight:700}
+.tab:focus-visible{outline:2px solid #fff;outline-offset:2px}
+
+/* ============================================================
+   3. LOADER — krótki sygnał "ładowanie nowego stylu"
+   (płynna zmiana wariantu = wrażenie osobnego projektu)
+   ============================================================ */
+.loader{position:fixed;inset:0;z-index:2000;display:flex;flex-direction:column;gap:16px;
+  align-items:center;justify-content:center;background:#0c0c10;color:#fff;
+  opacity:0;pointer-events:none;transition:opacity .35s}
+.loader.on{opacity:1;pointer-events:all}
+.spinner{width:44px;height:44px;border:3px solid #ffffff26;border-top-color:#fff;
+  border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loader p{font:500 14px 'Inter';letter-spacing:.08em;color:#c8c8d2}
+#app{transition:opacity .45s ease,transform .45s ease}
+#app.hide{opacity:0;transform:translateY(16px)}
+
+/* ============================================================
+   4. ANIMACJE PRZY SCROLLU (fade-in) — subtelny "zachwyt"
+   bez rozpraszania; IntersectionObserver dodaje klasę .in
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  *{animation-duration:.01ms!important}
+}
+</style>
+
+<style>
+/* ============================================================
+   5. MOTYWY 6 STYLÓW — psychologia koloru:
+   S1/S6 czerń+złoto = prestiż, luksus, siła
+   S2 biel+beż       = spokój, czystość, zaufanie
+   S3 róż/fiolet     = kreatywność, energia, odwaga
+   S4 pastele        = ciepło, bezpieczeństwo, troska
+   S5 beton+mosiądz  = surowość, męskość, rzemiosło
+   ============================================================ */
+
+/* ---------- STYL 1: LUKSUSOWY GLAMOUR ---------- */
+body[data-style="s1"]{
+  --bg:#0d0b09;--bg2:#16120d;--fg:#f3ead9;--muted:#b7a98c;
+  --accent:#d4af37;--accent2:#8a6d2f;--on-accent:#1a1408;
+  --card:#181310;--border:#d4af3736;--radius:6px;--btn-r:4px;
+  --font-h:'Playfair Display',serif;--font-b:'Inter',sans-serif;--sp:100px}
+body[data-style="s1"] .kicker::before{content:"— ";color:var(--accent)}
+body[data-style="s1"] h2{font-weight:600}
+body[data-style="s1"] .card{box-shadow:inset 0 1px 0 #d4af371f}
+
+/* ---------- STYL 2: MINIMALISTYCZNY SKANDYNAWSKI ---------- */
+body[data-style="s2"]{
+  --bg:#faf8f4;--bg2:#f0ebe2;--fg:#2b2926;--muted:#8d857a;
+  --accent:#2b2926;--accent2:#c9b8a3;--on-accent:#faf8f4;
+  --card:#ffffff;--border:#e4ddd1;--radius:2px;--btn-r:0px;
+  --font-h:'Inter',sans-serif;--font-b:'Inter',sans-serif;--sp:130px}
+body[data-style="s2"] h1,body[data-style="s2"] h2{font-weight:300;letter-spacing:-.02em}
+body[data-style="s2"] .kicker{color:#a89a86;font-weight:500}
+body[data-style="s2"] .card{box-shadow:none}
+body[data-style="s2"] .card:hover{box-shadow:0 18px 36px -22px rgba(60,50,40,.35)}
+
+/* ---------- STYL 3: NOWOCZESNY BOLD ---------- */
+body[data-style="s3"]{
+  --bg:#0f0f14;--bg2:#17171f;--fg:#ffffff;--muted:#9d9dae;
+  --accent:#ff3ea5;--accent2:#8b5cf6;--on-accent:#ffffff;
+  --card:#1b1b25;--border:#2d2d3c;--radius:20px;--btn-r:999px;
+  --font-h:'Space Grotesk',sans-serif;--font-b:'Space Grotesk',sans-serif;--sp:110px}
+body[data-style="s3"] h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;text-transform:uppercase;letter-spacing:-.01em}
+body[data-style="s3"] .kicker{background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+body[data-style="s3"] .btn--primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff}
+
+/* ---------- STYL 4: CIEPŁY BOUTIQUE ---------- */
+body[data-style="s4"]{
+  --bg:#fff7f2;--bg2:#fcece6;--fg:#54443d;--muted:#a08a80;
+  --accent:#d66f80;--accent2:#b98ea7;--on-accent:#ffffff;
+  --card:#ffffff;--border:#f3d9d2;--radius:24px;--btn-r:999px;
+  --font-h:'Quicksand',sans-serif;--font-b:'Quicksand',sans-serif;--sp:100px}
+body[data-style="s4"] .kicker{font-family:'Dancing Script',cursive;text-transform:none;
+  letter-spacing:0;font-size:1.5rem;font-weight:700;color:var(--accent)}
+body[data-style="s4"] h2{font-weight:700}
+body[data-style="s4"] img{border-radius:24px}
+body[data-style="s4"] .card{box-shadow:0 14px 34px -20px #d66f8055}
+
+/* ---------- STYL 5: INDUSTRIALNY BARBER ---------- */
+body[data-style="s5"]{
+  --bg:#141413;--bg2:#1d1b18;--fg:#e9e4dc;--muted:#989083;
+  --accent:#b08d57;--accent2:#7a6238;--on-accent:#171512;
+  --card:#1f1d19;--border:#3a352c;--radius:0px;--btn-r:0px;
+  --font-h:'Oswald',sans-serif;--font-b:'Inter',sans-serif;--sp:96px}
+body[data-style="s5"] h1,body[data-style="s5"] h2{text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+body[data-style="s5"] .kicker{border:1px solid var(--accent);padding:6px 12px}
+body[data-style="s5"] .btn{text-transform:uppercase;letter-spacing:.1em}
+body[data-style="s5"] .section--alt{background:
+  linear-gradient(#1d1b18f2,#1d1b18f2),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Crect width='6' height='6' fill='%231d1b18'/%3E%3Ccircle cx='1' cy='1' r='.6' fill='%23262420'/%3E%3C/svg%3E")}
+
+/* ---------- STYL 6: LUKSUSOWY GLAMOUR PREMIUM ---------- */
+body[data-style="s6"]{
+  --bg:#070706;--bg2:#0f0e0b;--fg:#f5efe2;--muted:#a89d85;
+  --accent:#caa652;--accent2:#8f7434;--on-accent:#0d0b06;
+  --card:#12100c;--border:#caa65226;--radius:0px;--btn-r:0px;
+  --font-h:'Cormorant Garamond',serif;--font-b:'Inter',sans-serif;--sp:140px}
+body[data-style="s6"] h1,body[data-style="s6"] h2{font-weight:400;letter-spacing:.06em}
+body[data-style="s6"] h2{font-size:clamp(2rem,4vw,3.2rem)}
+body[data-style="s6"] .sec-head{margin-bottom:64px}
+body[data-style="s6"] .kicker{font-weight:400;letter-spacing:.34em;color:var(--accent)}
+body[data-style="s6"] .sec-head::after{content:"";display:block;width:70px;height:1px;background:var(--accent);margin-top:22px}
+body[data-style="s6"] .center.sec-head::after{margin-inline:auto}
+body[data-style="s6"] .btn--primary{box-shadow:0 0 0 1px var(--accent) inset;background:transparent;color:var(--accent)}
+body[data-style="s6"] .btn--primary:hover{background:var(--accent);color:var(--on-accent);box-shadow:0 16px 40px -12px #caa65299}
+
+/* ---------- STYL 7: FACEBOOK PROFILE INSPIRATION ---------- */
+body[data-style="s7"]{
+  --bg:#f5f3ee;--bg2:#efe8df;--fg:#222427;--muted:#666b70;
+  --accent:#a36d3d;--accent2:#d5b18a;--on-accent:#fffaf4;
+  --card:#ffffff;--border:#e1d8cf;--radius:18px;--btn-r:12px;
+  --font-h:'Georgia','Times New Roman',serif;--font-b:'Segoe UI',Tahoma,Arial,sans-serif;--sp:88px}
+body[data-style="s7"] .top{background:rgba(255,255,255,.86);border-bottom:1px solid rgba(30,31,34,.08);color:#1f2328;backdrop-filter:blur(12px)}
+body[data-style="s7"] .top__brand{color:#4a4d50}
+body[data-style="s7"] .top__brand b{color:#1d1f22}
+body[data-style="s7"] .tab{background:#f4f1eb;border-color:#e3d9cf;color:#4f5357}
+body[data-style="s7"] .tab.active{background:#1d1f22;color:#fff;border-color:#1d1f22}
+body[data-style="s7"] h1,body[data-style="s7"] h2,body[data-style="s7"] h3,body[data-style="s7"] h4{font-family:var(--font-h);font-weight:600;letter-spacing:-.02em}
+body[data-style="s7"] .kicker{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:rgba(255,255,255,.7);padding:8px 14px;border-radius:999px;letter-spacing:.08em;color:var(--accent)}
+body[data-style="s7"] .card{background:var(--card);border:1px solid var(--border);box-shadow:0 14px 30px -26px rgba(34,36,39,.32)}
+body[data-style="s7"] .card:hover{box-shadow:0 18px 34px -24px rgba(34,36,39,.38)}
+body[data-style="s7"] .btn--primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--on-accent);box-shadow:0 14px 26px -18px rgba(163,109,61,.7)}
+body[data-style="s7"] .btn--ghost{border-color:var(--border);background:#fff;color:var(--fg)}
+body[data-style="s7"] .btn--ghost:hover{background:var(--bg2);color:var(--fg)}
+body[data-style="s7"] .hero--split .container{background:linear-gradient(180deg,#fbf8f4,#f0eae1);border:1px solid var(--border);border-radius:30px;padding:34px 34px;box-shadow:0 20px 36px -28px rgba(29,31,34,.35)}
+body[data-style="s7"] .hero--split h1{font-size:clamp(2.4rem,4.5vw,4rem)}
+body[data-style="s7"] .hero--split .hero__img img{border-radius:26px;box-shadow:0 26px 42px -30px rgba(34,36,39,.7)}
+body[data-style="s7"] .hero--split .hero__img::after{display:none}
+body[data-style="s7"] .section--alt{background:linear-gradient(180deg,#f9f5f0,#f5f1ea)}
+body[data-style="s7"] .trust{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+body[data-style="s7"] .trust__item{color:var(--muted)}
+body[data-style="s7"] .review{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px}
+body[data-style="s7"] .promo .card{background:linear-gradient(135deg,#fff,#f7f2eb);box-shadow:0 20px 32px -24px rgba(34,36,39,.25)}
+body[data-style="s7"] .team-card img{border-width:2px; border-color:#d7c2a2}
+body[data-style="s7"] .footer{background:#f0ece6;border-top:1px solid var(--border)}
+body[data-style="s7"] .footer__cols{background:rgba(255,255,255,.38);border-radius:18px;padding:30px 28px;border-top:0}
+body[data-style="s7"] .newsletter button{background:var(--accent);color:var(--on-accent)}
+body[data-style="s7"] .price-card{overflow:visible}
+body[data-style="s7"] .price-card__front{position:relative;z-index:2;background:linear-gradient(145deg,#fff 0%,#fffaf5 100%)}
+body[data-style="s7"] .s7-character{position:absolute;z-index:1;top:-92px;right:-18px;width:116px;height:136px;opacity:0;pointer-events:none;transform:translate(28px,34px) rotate(10deg);transform-origin:78% 100%}
+@keyframes s7-peek-out{0%{opacity:0;transform:translate(28px,34px) rotate(10deg)}55%{opacity:1;transform:translate(-7px,-8px) rotate(-4deg)}78%{transform:translate(3px,3px) rotate(3deg)}100%{opacity:1;transform:translate(0,0) rotate(2deg)}}
+@keyframes s7-peek-away{0%{opacity:1;transform:translate(0,0) rotate(2deg)}100%{opacity:0;transform:translate(28px,34px) rotate(10deg)}}
+body[data-style="s7"] .service-panel-host:hover .s7-character,body[data-style="s7"] .service-panel-host:focus-within .s7-character,body[data-style="s7"] .service-panel-host.is-open .s7-character{animation:s7-peek-out .72s cubic-bezier(.22,1,.36,1) forwards}
+body[data-style="s7"] .service-panel-host:not(:hover):not(:focus-within):not(.is-open) .s7-character{animation:s7-peek-away .28s ease forwards}
+body[data-style="s7"] .s7-character img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 10px 8px rgba(81,65,52,.16))}
+body[data-style="s7"] .s7-speech{position:absolute;z-index:4;right:-112px;top:-28px;width:164px;padding:11px 14px;border:1px solid #d8c5b2;border-radius:16px;background:#fff;color:#514942;font-size:11px;line-height:1.35;box-shadow:0 12px 24px -18px rgba(81,65,52,.55);opacity:0;transform:translateX(-8px) translateY(8px);transition:opacity .3s ease .34s,transform .4s ease .34s}
+body[data-style="s7"] .s7-speech::after{content:"";position:absolute;left:18px;bottom:-7px;width:12px;height:12px;background:#fff;border-right:1px solid #d8c5b2;border-bottom:1px solid #d8c5b2;transform:rotate(45deg)}
+body[data-style="s7"] .service-panel-host:hover .s7-speech,body[data-style="s7"] .service-panel-host:focus-within .s7-speech,body[data-style="s7"] .service-panel-host.is-open .s7-speech{opacity:1;transform:translateX(0) translateY(0)}
+@media(max-width:860px){body[data-style="s7"] .s7-character{top:-76px;right:-8px;transform:scale(.86) translate(28px,34px) rotate(10deg)}body[data-style="s7"] .s7-speech{right:-94px;top:-26px}}
+@media(prefers-reduced-motion:reduce){body[data-style="s7"] .s7-character,body[data-style="s7"] .s7-speech{animation:none;transition:none;opacity:1;transform:none}}
+
+/* ============================================================
+   6. HERO — 6 RÓŻNYCH UKŁADÓW (osobna struktura per styl)
+   ============================================================ */
+.hero{position:relative;overflow:hidden}
+
+/* S1: split — tekst po lewej, zdjęcie po prawej */
+.hero--split .container{display:grid;gap:56px;grid-template-columns:1.05fr .95fr;
+  align-items:center;min-height:calc(100vh - 120px);padding-block:70px}
+.hero--split h1{font-size:clamp(2.6rem,5vw,4.2rem);margin-block:18px 10px}
+.hero--split .hero__img{position:relative}
+.hero--split .hero__img img{border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;width:100%}
+.hero--split .hero__img::after{content:"";position:absolute;inset:18px -18px -18px 18px;
+  border:1px solid var(--accent);border-radius:var(--radius);z-index:-1}
+
+/* S2: pełnoekranowe jasne zdjęcie, tekst wyśrodkowany */
+.hero--full{display:grid;place-items:center;min-height:calc(100vh - 60px);text-align:center}
+.hero--full .hero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.hero--full::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#faf8f4cc,#faf8f477 40%,#faf8f4ee)}
+.hero--full .hero__content{position:relative;z-index:2;padding:40px 24px;max-width:760px}
+.hero--full h1{font-size:clamp(2.4rem,5.4vw,4.4rem);font-weight:300;letter-spacing:-.02em;margin-block:16px}
+
+/* S3: typograficzny — gigantyczny napis, zdjęcie niżej w pasku */
+.hero--typo{padding-top:80px;text-align:left}
+.hero--typo h1{font-size:clamp(3rem,10vw,7.5rem);font-weight:700;text-transform:uppercase;
+  line-height:.95;letter-spacing:-.02em}
+.hero--typo h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hero--typo .hero__strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.hero--typo .hero__strip img{border-radius:var(--radius);aspect-ratio:3/4;object-fit:cover;width:100%}
+.hero--typo .hero__strip img:nth-child(2){transform:translateY(26px)}
+
+/* S4: zdjęcie po lewej (miękki kształt), tekst po prawej */
+.hero--soft .container{display:grid;gap:56px;grid-template-columns:.95fr 1.05fr;
+  align-items:center;min-height:calc(100vh - 140px);padding-block:70px}
+.hero--soft .hero__img img{border-radius:46% 54% 55% 45%/48% 44% 56% 52%;
+  aspect-ratio:1/1.15;object-fit:cover;width:100%;border:10px solid #fff;
+  box-shadow:0 26px 60px -30px #d66f8066}
+.hero--soft h1{font-size:clamp(2.4rem,4.6vw,3.8rem);margin-block:8px 14px}
+
+/* S5: pełnoekranowe ciemne zdjęcie, tekst dosunięty do lewej-dołu */
+.hero--dark{display:flex;align-items:flex-end;min-height:calc(100vh - 60px)}
+.hero--dark .hero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;filter:grayscale(.35) contrast(1.1)}
+.hero--dark::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#14141355,#141413f0 88%)}
+.hero--dark .hero__content{position:relative;z-index:2;padding-bottom:90px}
+.hero--dark h1{font-size:clamp(2.8rem,7vw,5.6rem);text-transform:uppercase;line-height:1}
+.hero--dark h1 span{color:var(--accent)}
+
+/* S6: kinowe, wyśrodkowane, miękkie światło */
+.hero--cinema{display:grid;place-items:center;min-height:calc(100vh - 60px);text-align:center}
+.hero--cinema .hero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.hero--cinema::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 65% 55% at 50% 42%,#caa65226,transparent 60%),
+             linear-gradient(180deg,#070706aa,#07070655 45%,#070706f5)}
+.hero--cinema .hero__content{position:relative;z-index:2;max-width:820px;padding:40px 24px}
+.hero--cinema h1{font-size:clamp(2.8rem,6vw,5.2rem);font-weight:400;letter-spacing:.1em;margin-block:26px 14px}
+.hero--cinema .hero__content .btn-row{justify-content:center}
+.hero--cinema .rule{width:80px;height:1px;background:var(--accent);margin:30px auto 0}
+
+@media(max-width:860px){
+  .hero--split .container,.hero--soft .container{grid-template-columns:1fr;min-height:auto}
+  .hero--soft .hero__img{max-width:380px;margin-inline:auto}
+  .hero--typo .hero__strip{grid-template-columns:repeat(2,1fr)}
+  .hero--typo .hero__strip img:nth-child(3){display:none}
+}
+</style>
+
+<style>
+/* ============================================================
+   7. KOMPONENTY SEKCJI (moduły "do wyboru" przez klienta)
+   Każdy blok ma atrybut data-block w HTML — łatwo go wskazać,
+   usunąć lub przenieść zgodnie z decyzją klienta.
+   ============================================================ */
+
+/* ---------- Pasek zaufania (SOCIAL PROOF tuż po hero) ---------- */
+.trust{border-block:1px solid var(--border);padding-block:26px}
+.trust .container{display:flex;flex-wrap:wrap;gap:18px 46px;justify-content:center;align-items:center}
+.trust__item{display:flex;align-items:center;gap:10px;font-size:.95rem;color:var(--muted)}
+.trust__item b{color:var(--fg);font-size:1.05rem}
+.trust__item .star{color:var(--accent)}
+.trust--press .trust__item{font-family:var(--font-h);font-size:1.15rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- O nas ---------- */
+.about .container{display:grid;gap:56px;grid-template-columns:1fr 1fr;align-items:center}
+.about img{border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;width:100%}
+.about .sig{font-family:'Dancing Script',cursive;font-size:1.7rem;color:var(--accent);margin-top:22px}
+@media(max-width:860px){.about .container{grid-template-columns:1fr}}
+
+/* ---------- Przed / Po (kontrast wizualny = dowód skuteczności) ---------- */
+.ba-grid{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.ba{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba img.after{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+.ba__handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:#fff;z-index:3;pointer-events:none}
+.ba__handle::after{content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:40px;height:40px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font-size:18px}
+.ba__range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4}
+.ba__tag{position:absolute;top:14px;z-index:3;background:#000000b3;color:#fff;font:600 11px/1 var(--font-b);
+  letter-spacing:.14em;padding:8px 12px;border-radius:999px}
+.ba__tag--b{left:14px}.ba__tag--a{right:14px;background:var(--accent);color:var(--on-accent)}
+.ba-cap{margin-top:12px;color:var(--muted);font-size:.92rem}
+
+/* ---------- Cennik: magnetyczne panele informacji ---------- */
+.service-panel-host{position:relative;z-index:1}
+.service-panel-host:hover,.service-panel-host:focus-within,.service-panel-host.is-open{z-index:20}
+.service-panel-host:hover .price-card__front,.service-panel-host:focus-within .price-card__front,.service-panel-host.is-open .price-card__front{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 18px 36px -26px var(--accent)}
+.price-card{position:relative;min-height:330px;cursor:pointer;transition:box-shadow .28s ease}
+.price-card:hover,.price-card:focus-within,.price-card.is-open{box-shadow:0 22px 42px -26px rgba(0,0,0,.7)}
+.price-card__front{position:relative;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;padding:30px;border-radius:var(--radius);border:1px solid var(--border);background:var(--card);overflow:hidden;transition:border-color .28s ease,box-shadow .28s ease}
+.service-panel{position:absolute;top:0;left:calc(100% + 16px);width:min(390px,42vw);min-height:100%;padding:24px;border:1px solid var(--accent);border-radius:var(--radius);background:var(--bg2);box-shadow:0 22px 50px -20px rgba(0,0,0,.75);opacity:0;visibility:hidden;transform:translateX(-14px);transition:opacity .28s ease,transform .28s ease,visibility .28s ease;pointer-events:none}
+.service-panel-host:hover .service-panel,.service-panel-host:focus-within .service-panel,.service-panel-host.is-open .service-panel{opacity:1;visibility:visible;transform:translateX(0);pointer-events:auto}
+.service-panel::before{content:"";position:absolute;top:30px;left:-7px;width:12px;height:12px;background:var(--bg2);border-left:1px solid var(--accent);border-bottom:1px solid var(--accent);transform:rotate(45deg)}
+.service-panel__label{color:var(--accent);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+.service-panel h3{font-size:1.35rem;margin:8px 0 12px}
+.service-panel__meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.service-panel__meta span{padding:6px 9px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.78rem}
+.service-panel__description{color:var(--muted);font-size:.9rem;line-height:1.62;margin:0 0 14px}
+.service-panel__who{font-size:.86rem;line-height:1.5;margin:0 0 16px}
+.service-panel__who b{color:var(--accent)}
+.service-panel__cta{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:var(--btn-r);background:var(--accent);color:var(--on-accent);font-weight:700;text-decoration:none}
+.price-card h3{font-size:1.25rem;margin-bottom:6px}
+.price-card .from{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+.price-card .price{font-family:var(--font-h);font-size:2.1rem;color:var(--accent);margin-block:10px}
+.price-card .desc{color:var(--muted);font-size:.95rem;line-height:1.6}
+.price-card .badge{display:inline-block;background:var(--accent);color:var(--on-accent);
+  font:700 11px/1 var(--font-b);letter-spacing:.1em;padding:6px 10px;border-radius:999px;margin-bottom:12px}
+.price-list{max-width:760px;margin-inline:auto}
+.price-list__item{position:relative}
+.price-list .row{display:flex;align-items:baseline;gap:14px;padding-block:20px;border-bottom:1px solid var(--border);transition:transform .25s ease,color .25s ease}
+.price-list__item:hover .row,.price-list__item:focus-within .row,.price-list__item.is-open .row{transform:translateX(-4px);color:var(--accent)}
+.price-list .row .dots{flex:1;border-bottom:1px dotted var(--border);transform:translateY(-5px)}
+.price-list .row b{font-family:var(--font-h);font-size:1.15rem;font-weight:500}
+.price-list .row .val{color:var(--accent);font-weight:600;white-space:nowrap}
+.price-list__item .service-panel{top:8px;left:calc(100% + 18px);min-height:calc(100% - 8px)}
+.price-table{width:100%;border-collapse:collapse}
+.price-table-wrap{overflow:visible}
+.price-table th{font-family:var(--font-h);text-transform:uppercase;letter-spacing:.1em;font-size:.85rem;
+  color:var(--muted);text-align:left;padding:14px;border-bottom:2px solid var(--accent)}
+.price-table td{padding:16px 14px;border-bottom:1px solid var(--border)}
+.price-table .service-table-trigger{position:relative;display:block}
+.price-table .service-table-trigger .service-panel{left:calc(100% + 18px);top:-10px;width:min(390px,38vw)}
+.price-table td:last-child{color:var(--accent);font-weight:700;text-align:right;white-space:nowrap}
+@media(max-width:1100px){.service-panel{width:min(350px,38vw)}}
+@media(max-width:860px){
+  .price-table-wrap{overflow-x:auto}
+  .service-panel{position:relative;top:auto!important;left:auto!important;width:100%;min-height:0;margin-top:12px;transform:translateY(-10px)}
+  .service-panel::before{top:-7px;left:28px;border-left:1px solid var(--accent);border-bottom:0;border-top:1px solid var(--accent)}
+  .service-panel-host:hover .service-panel{opacity:0;visibility:hidden;transform:translateY(-10px);pointer-events:none}
+  .service-panel-host:focus-within .service-panel,.service-panel-host.is-open .service-panel{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}
+  .price-card{min-height:300px}.price-card__front{min-height:300px}
+}
+
+/* ---------- Zespół (AUTORYTET: eksperci, certyfikaty) ---------- */
+.team-card{text-align:center}
+.team-card img{width:130px;height:130px;border-radius:50%;object-fit:cover;margin:0 auto 18px;
+  border:3px solid var(--accent)}
+.team-card h3{font-size:1.15rem}
+.team-card .role{color:var(--accent);font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;margin-block:6px 10px}
+.team-card .bio{color:var(--muted);font-size:.92rem}
+.team-card .cert{display:inline-block;margin-top:12px;font-size:.78rem;color:var(--muted);
+  border:1px solid var(--border);padding:5px 10px;border-radius:999px}
+
+/* ---------- Opinie (SOCIAL PROOF + STORYTELLING) ---------- */
+.stars{color:var(--accent);letter-spacing:3px}
+.review{display:flex;flex-direction:column;gap:14px}
+.review .txt{font-style:italic;color:var(--fg);opacity:.92}
+.review .who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.review .who img{width:46px;height:46px;border-radius:50%;object-fit:cover}
+.review .who .nm{font-weight:700;font-size:.95rem}
+.review .who .meta{color:var(--muted);font-size:.8rem}
+.carousel{position:relative;overflow:hidden}
+.carousel__track{display:flex;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.carousel__slide{flex:0 0 100%;padding-inline:4px}
+.carousel__nav{display:flex;gap:10px;justify-content:center;margin-top:28px}
+.carousel__nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--accent);
+  background:transparent;color:var(--accent);cursor:pointer;font-size:18px;transition:.25s}
+.carousel__nav button:hover{background:var(--accent);color:var(--on-accent)}
+.review--big{max-width:820px;margin-inline:auto;text-align:center}
+.review--big .txt{font-family:var(--font-h);font-size:clamp(1.25rem,2.4vw,1.7rem);font-style:italic;line-height:1.5}
+.review--big .who{justify-content:center}
+
+/* ---------- Liczby / statystyki (SOCIAL PROOF + AUTORYTET) ---------- */
+.stats .grid-4{text-align:center}
+.stat .num{font-family:var(--font-h);font-size:clamp(2.4rem,4.6vw,3.6rem);color:var(--accent);font-weight:700}
+.stat .lbl{color:var(--muted);font-size:.92rem;margin-top:6px}
+body[data-style="s3"] .stats .grid-4{gap:16px}
+body[data-style="s3"] .stat{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:34px 20px}
+body[data-style="s3"] .stat:nth-child(odd){background:linear-gradient(140deg,#ff3ea51e,#8b5cf61e)}
+
+/* ---------- Promocja + licznik (SCARCITY & URGENCY) ---------- */
+.promo{position:relative}
+.promo .card{max-width:860px;margin-inline:auto;text-align:center;padding:52px 34px;
+  border:1px solid var(--accent);overflow:hidden}
+.promo .card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at top,var(--accent),transparent 65%);opacity:.09;pointer-events:none}
+.countdown{display:flex;gap:14px;justify-content:center;margin-block:26px}
+.cd-box{min-width:82px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:14px 10px}
+.cd-box b{display:block;font-family:var(--font-h);font-size:2rem;color:var(--accent)}
+.cd-box span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.slots{margin-top:16px;font-size:.9rem;color:var(--muted)}
+.slots b{color:var(--accent)}
+
+/* ---------- Blog / aktualności ---------- */
+.blog-card{padding:0;overflow:hidden}
+.blog-card img{aspect-ratio:16/10;object-fit:cover;width:100%;border-radius:0}
+.blog-card .bd{padding:24px}
+.blog-card .date{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.blog-card h3{font-size:1.15rem;margin-block:8px 10px}
+.blog-card p{color:var(--muted);font-size:.94rem}
+.blog-card a{color:var(--accent);font-weight:600;font-size:.9rem;text-decoration:none}
+
+/* ---------- Instagram feed (wizualny social proof) ---------- */
+.ig-grid{display:grid;gap:12px;grid-template-columns:repeat(6,1fr)}
+.ig-grid a{position:relative;display:block;overflow:hidden;border-radius:var(--radius)}
+.ig-grid img{aspect-ratio:1/1;object-fit:cover;width:100%;transition:transform .4s}
+.ig-grid a:hover img{transform:scale(1.08)}
+.ig-grid a::after{content:"♥";position:absolute;inset:0;display:grid;place-items:center;font-size:26px;
+  color:#fff;background:#00000066;opacity:0;transition:.3s}
+.ig-grid a:hover::after{opacity:1}
+@media(max-width:860px){.ig-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:800px;margin-inline:auto}
+.faq details{border:1px solid var(--border);border-radius:var(--radius);background:var(--card);
+  margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;padding:20px 24px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-size:1.4rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 24px 22px;color:var(--muted)}
+
+/* ---------- Rezerwacja (formularz) ---------- */
+.booking .container{display:grid;gap:56px;grid-template-columns:1fr 1.1fr;align-items:start}
+.form{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.form .full{grid-column:1/-1}
+.form label{display:block;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.form input,.form select,.form textarea{width:100%;padding:14px 16px;background:var(--bg);
+  border:1px solid var(--border);border-radius:var(--btn-r);color:var(--fg)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.form .ok{grid-column:1/-1;display:none;padding:16px;border:1px solid var(--accent);color:var(--accent);border-radius:var(--btn-r);text-align:center}
+.gift{display:flex;gap:14px;align-items:flex-start;margin-top:26px;padding:18px;border:1px dashed var(--accent);border-radius:var(--radius);font-size:.95rem}
+.gift .ico{font-size:1.5rem}
+@media(max-width:860px){.booking .container{grid-template-columns:1fr}}
+
+/* ---------- Mapa + godziny ---------- */
+.map .container{display:grid;gap:36px;grid-template-columns:1.2fr .8fr;align-items:stretch}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:var(--radius);filter:grayscale(.4)}
+.hours .row{display:flex;justify-content:space-between;padding-block:11px;border-bottom:1px solid var(--border);font-size:.95rem}
+.hours .row b{color:var(--accent)}
+@media(max-width:860px){.map .container{grid-template-columns:1fr}}
+
+/* ---------- Stopka (PEAK-END: mocne domknięcie + CTA) ---------- */
+.footer{background:var(--bg2);border-top:1px solid var(--border)}
+.footer__cta{text-align:center;padding-block:86px 66px}
+.footer__cta h2{font-size:clamp(2rem,4.4vw,3.4rem)}
+.footer__cta p{margin:14px auto 0;color:var(--muted)}
+.footer__cols{display:grid;gap:36px;grid-template-columns:2fr 1fr 1fr 1.4fr;padding-block:52px;border-top:1px solid var(--border)}
+.footer__cols h4{font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.footer__cols ul{list-style:none;display:grid;gap:9px;color:var(--muted);font-size:.94rem}
+.footer__cols a{text-decoration:none}
+.footer__cols a:hover{color:var(--accent)}
+.newsletter{display:flex;gap:0;margin-top:14px}
+.newsletter input{flex:1;padding:13px 16px;background:var(--bg);border:1px solid var(--border);
+  border-right:0;border-radius:var(--btn-r) 0 0 var(--btn-r);color:var(--fg);min-width:0}
+.newsletter button{padding:13px 18px;background:var(--accent);color:var(--on-accent);border:0;
+  border-radius:0 var(--btn-r) var(--btn-r) 0;font-weight:700;cursor:pointer}
+.footer__bar{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;padding-block:22px;
+  border-top:1px solid var(--border);color:var(--muted);font-size:.84rem}
+@media(max-width:900px){.footer__cols{grid-template-columns:1fr 1fr}}
+
+/* ---------- Marquee (S3) ---------- */
+.marquee{overflow:hidden;border-block:1px solid var(--border);padding-block:18px;background:var(--bg2)}
+.marquee__inner{display:flex;gap:48px;width:max-content;animation:mq 22s linear infinite;
+  font:700 1.2rem var(--font-h);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.marquee__inner span em{font-style:normal;color:var(--accent);margin-right:48px}
+@keyframes mq{to{transform:translateX(-50%)}}
+</style>
+</head>
+<body data-style="s1">
+
+<!-- ============ LOADER: sygnał "ładowanie nowego stylu" ============ -->
+<div class="loader" id="loader" role="status" aria-live="polite">
+  <div class="spinner"></div><p id="loaderTxt">Ładowanie stylu…</p>
+</div>
+
+<!-- ============ STICKY HEADER: przełącznik 6 propozycji ============ -->
+<header class="top">
+  <div class="top__inner">
+    <span class="top__brand">DEMO&nbsp;·&nbsp;<b>Salon fryzjerski</b></span>
+    <nav class="top__tabs" id="tabs" aria-label="Wybór stylu strony"></nav>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<script>
+/* ============================================================
+   DANE WSPÓLNE SALONU
+   Treści (usługi, zespół, opinie, FAQ...) są wspólne dla
+   wszystkich wariantów — zmienia się design, ton hero i akcenty.
+   Każda sekcja w wygenerowanym HTML ma data-block="...", więc
+   klient może palcem wskazać: "ten blok chcę / tego nie chcę".
+   ============================================================ */
+const img = (id,w=1100)=>`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`;
+
+const IMG = {
+  salon1: img('1560066984-138dadb4c035'),   // eleganckie wnętrze salonu
+  salon2: img('1521590832167-7bcbfaa6381f'),// jasne wnętrze
+  styling1: img('1562322140-8baeececf3df'), // stylizacja włosów
+  styling2: img('1580618672591-eb180b1a973f'),
+  styling3: img('1522337660859-02fbefca4702'),
+  barber1: img('1503951914875-452162b0f3f1'),
+  barber2: img('1585747860715-2ba37e788b70'),
+  w1: img('1494790108377-be9c29b29330',400),
+  w2: img('1438761681033-6461ffad8d80',400),
+  w3: img('1508214751196-bcfd4ca60f91',400),
+  w4: img('1534528741775-53994a69daeb',900),
+  w5: img('1524504388940-b1c1722653e1',900),
+  w6: img('1517841905240-472988babdf9',900),
+  w7: img('1529626455594-4ff0802cfb7e',900),
+  m1: img('1507003211169-0a1dd7228f2d',400),
+  m2: img('1500648767791-00dcc994a43e',400),
+};
+
+const SERVICES = [
+  {n:'Strzyżenie damskie + stylizacja', p:'od 120 zł', d:'Konsultacja, mycie, cięcie, modelowanie', time:'około 60 min', forWho:'dla osób, które chcą odświeżyć kształt fryzury i ułatwić sobie codzienną stylizację',
+  perks:['Precyzyjne cięcie dopasowane do kształtu twarzy i włosów','Stylizacja na miarę, z efektem naturalnego glow','Wskazówki pielęgnacyjne, dzięki którym fryzura wygląda świeżo dłużej'], s7Speech:'Nowe cięcie, lekkość i efekt, który od razu poprawia humor.', hot:false},
+  {n:'Strzyżenie męskie / barber', p:'od 70 zł', d:'Cięcie klasyczne lub maszynką, kontur brody', time:'około 45 min', forWho:'dla osób, które chcą mieć dopracowane cięcie i brodę bez codziennych poprawek',
+  perks:['Krótko, schludnie i z zachowaniem proporcji','Kontur brody i dopracowanie detali','Efekt „gotowy do codzienności” bez pośpiechu'], s7Speech:'Dopracowane detale robią różnicę. Wyglądaj świetnie bez wysiłku.', hot:false},
+  {n:'Koloryzacja premium', p:'od 250 zł', d:'Balayage, sombre, airtouch — z pielęgnacją Olaplex', time:'około 3–4 godz.', forWho:'dla osób, które marzą o świeżym kolorze, głębi i naturalnym rozświetleniu',
+  perks:['Dobór koloru do tonu skóry i światła','Pielęgnacja Olaplex dla zdrowego blasku włosów','Efekt, który wygląda bardzo naturalnie i zostaje na długo'], s7Speech:'Rozświetl twarz kolorem, który wygląda jak Twój naturalny blask.', hot:false},
+  {n:'Metamorfoza całościowa', p:'od 450 zł', d:'Konsultacja wizerunkowa, kolor, cięcie, stylizacja', time:'około 4–5 godz.', forWho:'dla osób gotowych na przemyślaną zmianę wizerunku i efekt wow', hot:true,
+  perks:['Kompletny plan fryzjerski dopasowany do Ciebie','Koloryzacja, cięcie i stylizacja w jednej wizycie','Pożądany efekt „wow” bez kompromisów'], s7Speech:'Gotowa na zmianę? Stwórzmy razem Twój efekt wow.',},
+  {n:'Zabieg regeneracyjny', p:'od 150 zł', d:'Rytuał keratynowy / botoks na włosy', time:'około 90 min', forWho:'dla włosów suchych, matowych, puszących się lub osłabionych stylizacją',
+  perks:['Odbudowa i wygładzenie włosów po stylizacji','Lepsza miękkość, blask i łatwiejsze układanie','Dodatkowa ochrona przed puszeniem i łamaniem'], s7Speech:'Poczuj pod palcami miękkość i zobacz, jak włosy odzyskują blask.', hot:false},
+  {n:'Upięcia okolicznościowe', p:'od 180 zł', d:'Śluby, studniówki, sesje zdjęciowe', time:'około 90–120 min', forWho:'dla osób, które chcą czuć się wyjątkowo i pewnie podczas ważnego wydarzenia',
+  perks:['Fryzura dopasowana do okazji i stylizacji całego looku','Trwały efekt i kontrola w trakcie wydarzenia','Profesjonalne dopracowanie detali na zdjęciach i wielkim dniu'], s7Speech:'Ważny dzień zasługuje na fryzurę, w której poczujesz się wyjątkowo.', hot:false},
+];
+
+/* AUTORYTET: konkretne certyfikaty i lata praktyki budują wiarygodność ekspercką */
+const TEAM = [
+  {img:IMG.w1, n:'Marta Zielińska', r:'Master Colorist', b:'14 lat doświadczenia. Autorka ponad 2000 metamorfoz koloru.', c:'Certyfikat L\'Oréal Professionnel'},
+  {img:IMG.m1, n:'Adam Krawiec', r:'Senior Barber', b:'Precyzyjne cięcia klasyczne i skin fade. Finalista Barber Battle 2024.', c:'Dyplom American Crew'},
+  {img:IMG.w2, n:'Ola Nowicka', r:'Stylistka ślubna', b:'Upięcia i stylizacje okolicznościowe — ponad 300 panien młodych.', c:'Szkolenie Wella Masters'},
+  {img:IMG.w3, n:'Kasia Wójcik', r:'Specjalistka pielęgnacji', b:'Trycholożka. Dobiera rytuały regeneracyjne do diagnozy skóry głowy.', c:'Certyfikat trychologiczny PTT'},
+];
+
+/* SOCIAL PROOF + STORYTELLING: opinie jako mini-historie ("case studies"),
+   nie suche pochwały — czytelniczka może się w nich przejrzeć */
+const REVIEWS = [
+  {img:IMG.w1, n:'Karolina M.', m:'Metamorfoza · balayage', s:5,
+   t:'Przyszłam ze zniszczonym po dekoloryzacji włosem i zdjęciem z Pinteresta „nie do zrobienia”. Marta rozpisała plan na dwie wizyty — dziś obcy ludzie pytają mnie, gdzie robię kolor.'},
+  {img:IMG.w2, n:'Agnieszka T.', m:'Fryzura ślubna', s:5,
+   t:'Ola zrobiła próbne upięcie, wysłała mi zdjęcia z każdej strony i poprawiła jeden detal, o którym sama bym nie pomyślała. W dniu ślubu fryzura przetrwała 14 godzin i wyglądała jak z okładki.'},
+  {img:IMG.m2, n:'Michał K.', m:'Strzyżenie + broda', s:5,
+   t:'Facet, który 10 lat chodził „gdziekolwiek”. Adam w 40 minut ogarnął fryzurę, brodę i doradził, jak to utrzymać. Wracam co 3 tygodnie jak w zegarku.'},
+  {img:IMG.w3, n:'Dorota S.', m:'Zabieg regeneracyjny', s:5,
+   t:'Po latach prostowania włosy odmawiały współpracy. Po trzech rytuałach keratynowych u Kasi pierwszy raz od dawna rozpuszczam je bez wstydu. To była inwestycja w siebie, nie wydatek.'},
+];
+
+const STATS = [
+  {v:12, suf:' lat', l:'doświadczenia zespołu'},
+  {v:5000, suf:'+', l:'zadowolonych klientek i klientów'},
+  {v:4.9, suf:'/5', l:'średnia z 640 opinii Google', dec:1},
+  {v:98, suf:'%', l:'wizyt umawianych ponownie'},
+];
+
+const FAQ = [
+  {q:'Czy muszę umawiać wizytę, czy mogę wpaść „z ulicy”?', a:'Pracujemy głównie na rezerwacje — dzięki temu nie czekasz w kolejce, a fryzjer ma czas wyłącznie dla Ciebie. Jeśli mamy wolne okno, przyjmiemy Cię także bez zapisu.'},
+  {q:'Ile trwa koloryzacja typu balayage?', a:'Zwykle 3–4 godziny, wliczając konsultację, koloryzację, pielęgnację Olaplex i stylizację. Przy pierwszej wizycie zarezerwuj sobie trochę zapasu.'},
+  {q:'Czy pierwsza konsultacja jest płatna?', a:'Nie — konsultacja przed metamorfozą lub koloryzacją jest zawsze bezpłatna i niezobowiązująca. Obejrzymy włosy, porozmawiamy o oczekiwaniach i przygotujemy wycenę.'},
+  {q:'Jak mogę odwołać lub przełożyć wizytę?', a:'Telefonicznie lub SMS-em najpóźniej 24 h przed terminem. Wiemy, że życie bywa nieprzewidywalne — po prostu daj nam znać.'},
+  {q:'Czy pracujecie na produktach dla wegan / bez amoniaku?', a:'Tak, mamy pełną linię koloryzacji bez amoniaku oraz pielęgnację wegańską. Powiedz o tym przy rezerwacji, a przygotujemy stanowisko.'},
+];
+
+const BLOG = [
+  {img:IMG.styling2, d:'18 sierpnia 2026', t:'5 trendów koloryzacji na jesień 2026', x:'Cowgirl copper, espresso brunette i „lived-in blonde” — sprawdź, co będzie królować i który trend pasuje do Twojej urody.'},
+  {img:IMG.styling1, d:'4 sierpnia 2026', t:'Jak przygotować włosy do metamorfozy?', x:'Trzy proste kroki na 2 tygodnie przed wizytą, dzięki którym kolor złapie równomiernie, a włos pozostanie zdrowy.'},
+  {img:IMG.styling3, d:'21 lipca 2026', t:'Fryzura ślubna: kiedy umówić próbę?', x:'Idealny harmonogram: od pierwszej konsultacji po poprawki w dniu „zero”. Podpowiadamy, o co zapytać stylistkę.'},
+];
+
+const CONTACT = {addr:'Jacentów 119, Sadowie', tel:'+48 575 555 689', mail:''};
+const HOURS = [['Poniedziałek – Piątek','9:00 – 19:00'],['Sobota','9:00 – 15:00'],['Niedziela','nieczynne']];
+
+/* ============================================================
+   KONFIGURACJA 6 STYLÓW
+   hero  — typ układu sekcji hero (osobna struktura HTML/CSS)
+   order — kolejność i warianty sekcji (celowo inna w każdym stylu)
+   copy  — ton komunikacji dopasowany do emocji danej estetyki
+   ============================================================ */
+const STYLES = {
+  s1:{name:'Styl 1 · Luksusowy Glamour', hero:'split',
+    order:['hero','trust','about','ba','pricing:cards','team','reviews:carousel','stats','promo','booking','map','faq','footer'],
+    copy:{brand:'Studio Fryzur Izabela Cybula', kicker:'Salon fryzjerski · Sadowie',
+      h1:'Twoje włosy zasługują na <em>pełną metamorfozę</em>',
+      sub:'Nowoczesny salon fryzjerski w Sadowiu. Strzyżenia, koloryzacja i stylizacja wykonywane z dbałością o naturalną urodę i komfort każdej klientki.',
+      cta1:'Umów wizytę', cta2:'Zobacz realizacje', heroImg:'styling1',
+      aboutT:'Styl i profesjonalizm w jednym miejscu', 
+      aboutX:'Studio Fryzur Izabela Cybula to miejsce, w którym łączy się profesjonalna obsługa, nowoczesne podejście do fryzjerstwa oraz indywidualne dopasowanie stylizacji do urody i potrzeb klientki. Dbamy o włosy tak, jak o własny wygląd i samopoczucie.',
+      promoT:'Promocja salonowa — bezpłatna konsultacja', promoX:'Zarezerwuj wizytę i skorzystaj z indywidualnej konsultacji przed zabiegiem. Wartość, profesjonalizm i komfort w jednym miejscu.',
+      footT:'Umów się na wizytę w salonie', footX:'Telefon: +48 575 555 689 · Jacentów 119, Sadowie'}},
+  s2:{name:'Styl 2 · Minimalistyczny Skandynawski', hero:'full',
+    order:['hero','about','stats','ba','pricing:list','team','faq','reviews:grid','ig','booking','map','footer'],
+    copy:{brand:'Studio Fryzur Izabela Cybula', kicker:'Salon fryzjerski',
+      h1:'Prostota, światło<br>i zdrowe włosy',
+      sub:'Salon fryzjerski w Sadowiu. Zadbamy o komfort, naturalny efekt i nowoczesny look dopasowany do Twojego stylu.',
+      cta1:'Zarezerwuj termin', cta2:'Poznaj salon', heroImg:'salon2',
+      aboutT:'Spokój, profesjonalizm i dobry efekt',
+      aboutX:'W Studio Fryzur Izabela Cybula zależy nam na spokojnej atmosferze i efektach, które wyglądają naturalnie i podkreślają Twoją urodę. Pracujemy z klientkami indywidualnie, dobierając stylizację, kolor i pielęgnację do ich potrzeb.',
+      promoT:'Pierwsza wizyta – konsultacja gratis', promoX:'Sprawdź, jak może wyglądać Twoja nowa fryzura. Zarezerwuj konsultację i poznaj możliwości salonu.',
+      footT:'Umów się na spokojnie', footX:'Jacentów 119, Sadowie · +48 575 555 689'}},
+  s3:{name:'Styl 3 · Nowoczesny Bold', hero:'typo',
+    order:['hero','marquee','stats','ba','pricing:cards','team','reviews:grid','promo','blog','ig','booking','footer'],
+    copy:{brand:'Studio Fryzur Izabela Cybula', kicker:'Salon nowej generacji',
+      h1:'WŁOSY,<br>KTÓRE <em>ROZJAŚNIAJĄ</em><br>TWÓJ WYGLĄD',
+      sub:'Koloryzacja, strzyżenie i stylizacja dopasowane do Twojego typu urody. W salonie dbamy o efekt, który wygląda świetnie i dobrze się czuje.',
+      cta1:'Umów wizytę', cta2:'Zobacz realizacje', heroImg:'styling1',
+      aboutT:'Kreatywność i profesjonalna technika',
+      aboutX:'W Studio Fryzur Izabela Cybula łączymy nowoczesne podejście do fryzjerstwa z indywidualnym podejściem do każdej klientki. Chcemy, aby efekt końcowy był nie tylko modny, ale też naturalny i komfortowy w codziennym noszeniu.',
+      promoT:'Konsultacja przed zabiegiem gratis', promoX:'Zanim podejmiesz decyzję, skonsultujemy kolor, długość i stylizacja. Dzięki temu wybierasz rozwiązanie, które będzie najlepsze dla Twoich włosów.',
+      footT:'Gotowa do zmiany?', footX:'Umów się telefonicznie: +48 575 555 689'}},
+  s4:{name:'Styl 4 · Ciepły Boutique', hero:'soft',
+    order:['hero','promo','about','team','ba','pricing:cards','reviews:carousel','ig','faq','booking','map','footer'],
+    copy:{brand:'Studio Fryzur Izabela Cybula', kicker:'z miłości do włosów',
+      h1:'Miejsce, w którym poczujesz się zaopiekowana',
+      sub:'Salon fryzjerski w Sadowiu z indywidualnym podejściem do każdego klienta. Dbamy o wygląd, komfort i naturalny efekt, który podkreśla Twoją urodę.',
+      cta1:'Umów się na wizytę', cta2:'Poznaj salon', heroImg:'styling3',
+      aboutT:'Salon z charakterem i dobrym podejściem do klienta',
+      aboutX:'W Studio Fryzur Izabela Cybula liczy się nie tylko efekt końcowy, ale też relacja z klientką. Każda wizyta to rozmowa, dobór odpowiedniej stylizacji oraz profesjonalna opieka nad włosami.',
+      promoT:'Darmowa konsultacja przed wizytą', promoX:'Poznaj możliwości salonu i dobierz najlepszy zabieg do swoich włosów. Indywidualne porady pomagają osiągnąć najlepszy efekt.',
+      footT:'Wpadnij do nas na dobre włosy', footX:'Jacentów 119, Sadowie · +48 575 555 689'}},
+  s5:{name:'Styl 5 · Industrialny Barber', hero:'dark',
+    order:['hero','trust','pricing:table','team','ba','stats','reviews:grid','promo','map','booking','faq','footer'],
+    copy:{brand:'Studio Fryzur Izabela Cybula', kicker:'Salon fryzjerski · Sadowie',
+      h1:'STYL.<br><span>PROFESJONALNIE.</span>',
+      sub:'Najważniejsze są włosy, komfort i efekt, który wygląda dobrze od pierwszego dnia. W salonie oferujemy profesjonalne strzyżenie, koloryzację i stylizację.',
+      cta1:'Rezerwuj wizytę', cta2:'Zobacz usługi', heroImg:'barber1',
+      aboutT:'Profesjonalna obsługa i skuteczny efekt',
+      aboutX:'Każda wizyta w naszym salonie to indywidualna konsultacja, profesjonalna realizacja i dbałość o to, by efekt był zgodny z oczekiwaniami klientki.',
+      promoT:'Konsultacja przed zabiegiem gratis', promoX:'Dajemy czas na rozmowę, analizę włosów i dobranie najlepszej usługi. Efekt, który służy codzienności, ważniejszy od chwilowej mody.',
+      footT:'Umów wizytę już dziś', footX:'Zadzwoń: +48 575 555 689 · Jacentów 119, Sadowie'}},
+  s6:{name:'Styl 6 · Glamour Premium', hero:'cinema',
+    order:['hero','trust:press','about','ba','pricing:list','team','reviews:big','stats','booking','promo','footer'],
+    copy:{brand:'Studio Fryzur Izabela Cybula', kicker:'Haute Coiffure',
+      h1:'Perfekcja jest<br>kwestią detalu',
+      sub:'Salon fryzjerski w Sadowiu stworzony dla kobiet i mężczyzn, którzy chcą dobrze wyglądać i czuć się komfortowo. Każda wizyta jest dopasowana do potrzeb klienta i jego stylu.',
+      cta1:'Zarezerwuj konsultację', cta2:'Poznaj salon', heroImg:'salon1',
+      aboutT:'Dbałość o detal i profesjonalny efekt',
+      aboutX:'Studio Fryzur Izabela Cybula to miejsce, w którym liczy się indywidualne podejście, estetyka i profesjonalna realizacja. Dbamy o to, aby każda stylizacja była nie tylko piękna, ale też trwała i odpowiadała Twojemu codziennemu stylowi.',
+      promoT:'Bezpłatna konsultacja przed zabiegiem', promoX:'Przygotujemy cię do wyboru najlepszego rozwiązania i zaproponujemy efektywne oraz naturalne podejście do fryzjerstwa.',
+      footT:'Doświadcz profesjonalnego salonu', footX:'Jacentów 119, Sadowie · +48 575 555 689'}},
+  s7:{name:'Styl 7 · Klasyk', hero:'split',
+    order:['hero','about','stats','ba','pricing:cards','team','reviews:grid','promo','booking','map','faq','footer'],
+    copy:{brand:'Studio Fryzur Izabela Cybula', kicker:'𝓢𝓽𝓾𝓭𝓲𝓸 𝓕𝓻𝔂𝔃𝓾𝓻 𝓘𝔃𝓪𝓫𝓮𝓵𝓪 𝓒𝔂𝓫𝓾𝓵𝓪',
+      h1:'Piękno, które wygląda <em>naturalnie</em>',
+      sub:'W salonie dbamy o włosy, stylizację i komfort — tak, żeby efekt był nie tylko modny, ale przede wszystkim zgodny z Twoją naturą i codziennym życiem.',
+      cta1:'Umów wizytę', cta2:'Zobacz efekty', heroImg:'styling2',
+      aboutT:'Salon, który dba o każdy detal',
+      aboutX:'Na fanpage pojawia się profesjonalny, ciepły i nowoczesny wizerunek salonu. To estetyka, która łączy mocne zdjęcia, elegancki klimat oraz prostotę komunikacji. W praktyce oznacza to przyjazne miejsce, gdzie liczy się nie tylko wygląd, ale też jakość obsługi i relacja z klientką.',
+      promoT:'Indywidualna konsultacja przed wizytą', promoX:'Zanim podejmiesz decyzję, poznajemy Twoje potrzeby i dobieramy najlepszy zabieg, który będzie odpowiadał włosom i stylowi życia.',
+      footT:'Umów wizytę u nas', footX:'Jacentów 119, Sadowie · +48 575 555 689'}},
+};
+</script>
+
+<script>
+/* ============================================================
+   RENDERERY SEKCJI
+   Każdy zwraca string HTML. data-block = identyfikator modułu
+   (dla klienta: "chcę blok X w wersji ze stylu Y").
+   ============================================================ */
+const stars = n=>'★'.repeat(n)+'☆'.repeat(5-n);
+const R = {};
+
+/* ---- HERO — PEAK-END RULE: mocne, zachwycające pierwsze wrażenie.
+   CTA podwójne = zasada małych kroków: łagodne "Zobacz..." dla
+   niezdecydowanych + główne "Umów wizytę" dla gotowych. ---- */
+R.hero = (s)=>{
+  const c=s.copy, im=IMG[c.heroImg];
+  const ctas = `<div class="btn-row">
+      <a class="btn btn--primary" href="#rezerwacja">${c.cta1}</a>
+      <a class="btn btn--ghost" href="#metamorfozy">${c.cta2}</a></div>`;
+  const head = `<span class="kicker">${c.kicker}</span><h1>${c.h1}</h1><p class="sub" style="color:var(--muted);font-size:1.12rem;margin-top:14px">${c.sub}</p>`;
+  if(s.hero==='split') return `<section class="hero hero--split" data-block="hero">
+    <div class="container"><div class="hero__content reveal">${head}${ctas}</div>
+    <div class="hero__img reveal"><img src="${im}" alt="Stylizacja włosów w salonie ${c.brand}"></div></div></section>`;
+  if(s.hero==='full') return `<section class="hero hero--full" data-block="hero">
+    <img class="hero__bg" src="${im}" alt="" data-parallax>
+    <div class="hero__content reveal">${head}${ctas.replace('btn-row','btn-row" style="justify-content:center')}</div></section>`;
+  if(s.hero==='typo') return `<section class="hero hero--typo section" data-block="hero">
+    <div class="container"><div class="reveal"><span class="kicker">${c.kicker}</span><h1>${c.h1}</h1>
+    <p style="color:var(--muted);font-size:1.12rem;margin-top:22px;max-width:52ch">${c.sub}</p>${ctas}</div>
+    <div class="hero__strip reveal"><img src="${IMG.styling1}" alt="Odważna koloryzacja"><img src="${IMG.styling2}" alt="Nowoczesne cięcie"><img src="${IMG.styling3}" alt="Stylizacja w salonie"></div></div></section>`;
+  if(s.hero==='soft') return `<section class="hero hero--soft" data-block="hero">
+    <div class="container"><div class="hero__img reveal"><img src="${im}" alt="Wnętrze pracowni ${c.brand}"></div>
+    <div class="hero__content reveal">${head}${ctas}</div></div></section>`;
+  if(s.hero==='dark') return `<section class="hero hero--dark" data-block="hero">
+    <img class="hero__bg" src="${im}" alt="" data-parallax>
+    <div class="hero__content container reveal">${head}${ctas}</div></section>`;
+  /* cinema (S6) */
+  return `<section class="hero hero--cinema" data-block="hero">
+    <img class="hero__bg" src="${im}" alt="" data-parallax>
+    <div class="hero__content reveal"><span class="kicker">${c.kicker}</span><h1>${c.h1}</h1>
+    <p style="color:var(--muted);font-size:1.1rem">${c.sub}</p>
+    <div class="btn-row"><a class="btn btn--primary" href="#rezerwacja">${c.cta1}</a></div>
+    <div class="rule"></div></div></section>`;
+};
+
+/* ---- PASEK ZAUFANIA — SOCIAL PROOF w pierwszym ekranie:
+   liczby + oceny + "polecane przez" obniżają nieufność od razu.
+   Wariant "press" (S6) = AUTORYTET mediów zamiast liczb. ---- */
+R.trust = (s,variant)=>{
+  if(variant==='press') return `<section class="trust trust--press reveal" data-block="pasek-zaufania">
+    <div class="container"><div class="trust__item">Vogue&nbsp;Polska</div><div class="trust__item">ELLE</div>
+    <div class="trust__item">Harper's&nbsp;Bazaar</div><div class="trust__item">K&nbsp;MAG</div>
+    <div class="trust__item"><span class="star">★</span>&nbsp;Best&nbsp;of&nbsp;Beauty&nbsp;2025</div></div></section>`;
+  return `<section class="trust reveal" data-block="pasek-zaufania"><div class="container">
+    <div class="trust__item"><b>5000+</b> klientów</div>
+    <div class="trust__item"><span class="star">★★★★★</span> <b>4.9</b> (640 opinii Google)</div>
+    <div class="trust__item"><b>12 lat</b> na rynku</div>
+    <div class="trust__item">Certyfikaty <b>L'Oréal · Wella</b></div>
+    <div class="trust__item">Polecane przez <b>Booksy</b></div></div></section>`;
+};
+
+/* ---- O NAS — STORYTELLING + AUTORYTET (historia, wartości) ---- */
+R.about = (s)=>{
+  const c=s.copy;
+  return `<section class="about section" data-block="o-nas" id="o-nas"><div class="container">
+    <div class="reveal"><span class="kicker">O nas</span><h2>${c.aboutT}</h2>
+    <p style="color:var(--muted)">${c.aboutX}</p>
+    <div class="sig">— zespół ${c.brand}</div>
+    <div class="btn-row"><a class="btn btn--ghost" href="#zespol">Poznaj zespół</a></div></div>
+    <div class="reveal"><img src="${IMG.salon1}" alt="Wnętrze salonu ${c.brand}"></div></div></section>`;
+};
+
+/* ---- PRZED / PO — EFEKT KONTRASTU: metamorfoza jako namacalny
+   dowód skuteczności. Suwak angażuje (interakcja > bierne oglądanie). ---- */
+R.ba = ()=>{
+  const pair=(b,a,cap)=>`<div><div class="ba reveal" style="--pos:50%">
+    <img src="${b}" alt="Włosy przed metamorfozą">
+    <img class="after" src="${a}" alt="Włosy po metamorfozie">
+    <span class="ba__tag ba__tag--b">Przed</span><span class="ba__tag ba__tag--a">Po</span>
+    <div class="ba__handle"></div>
+    <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Porównanie przed i po"></div>
+    <p class="ba-cap">${cap}</p></div>`;
+  return `<section class="section section--alt" data-block="przed-po" id="metamorfozy"><div class="container">
+    <div class="sec-head center reveal"><span class="kicker">Metamorfozy</span><h2>Zobacz różnicę na własne oczy</h2>
+    <p class="sub">Przesuń suwak — każde zdjęcie to prawdziwa klientka naszego salonu.</p></div>
+    <div class="ba-grid">
+      ${pair(IMG.w4, IMG.w6, 'Balayage + strzyżenie warstwowe · 1 wizyta, 3,5 godziny')}
+      ${pair(IMG.w5, IMG.w7, 'Metamorfoza koloru + rytuał keratynowy · plan 2 wizyt')}
+    </div></div></section>`;
+};
+
+/* ---- CENNIK — 3 warianty prezentacji. Transparentne ceny budują
+   zaufanie; wyróżniona pozycja (badge "bestseller") = social proof. ---- */
+const servicePanel = x=>`<aside class="service-panel" aria-label="Szczegóły usługi ${x.n}">
+  <span class="service-panel__label">Szczegóły usługi</span>
+  <h3>${x.n}</h3>
+  <div class="service-panel__meta"><span>${x.p}</span><span>${x.time}</span></div>
+  <p class="service-panel__description">${x.d}. Podczas wizyty przeprowadzimy konsultację, dobierzemy rozwiązanie do Twoich włosów i zadbamy o komfortowy przebieg zabiegu. ${x.perks.join('. ')}. Poczujesz różnicę w wyglądzie, dotyku i łatwości codziennej stylizacji.</p>
+  <p class="service-panel__who"><b>Dla kogo:</b> ${x.forWho}.</p>
+  <a class="service-panel__cta" href="#rezerwacja">Umów wizytę</a>
+</aside>`;
+const s7Character = x=>`<div class="s7-character" aria-hidden="true">
+  <img src="osoba.png" alt="">
+  <div class="s7-speech">${x.s7Speech}</div>
+</div>`;
+
+R.pricing = (s,variant)=>{
+  const head=`<div class="sec-head center reveal"><span class="kicker">Cennik</span><h2>Przejrzyste ceny, bez niespodzianek</h2>
+    <p class="sub">Ostateczna wycena zawsze po bezpłatnej konsultacji — zależy od długości i gęstości włosów.</p></div>`;
+  if(variant==='list') return `<section class="section" data-block="cennik" id="cennik"><div class="container">${head}
+    <div class="price-list reveal">${SERVICES.map(x=>`<div class="price-list__item service-panel-host" tabindex="0"><div class="row"><b>${x.n}</b><span class="dots"></span><span class="val">${x.p}</span></div>${servicePanel(x)}</div>`).join('')}</div>
+    <div class="center" style="margin-top:40px"><a class="btn btn--primary" href="#rezerwacja">Zarezerwuj termin</a></div></div></section>`;
+  if(variant==='table') return `<section class="section" data-block="cennik" id="cennik"><div class="container">${head}
+    <div class="reveal price-table-wrap"><table class="price-table">
+    <thead><tr><th>Usługa</th><th>Zakres</th><th>Cena</th></tr></thead>
+    <tbody>${SERVICES.map(x=>`<tr><td><div class="service-table-trigger service-panel-host" tabindex="0"><b>${x.n}</b>${servicePanel(x)}</div></td><td style="color:var(--muted)">${x.d}</td><td>${x.p}</td></tr>`).join('')}</tbody></table></div>
+    <div class="center" style="margin-top:40px"><a class="btn btn--primary" href="#rezerwacja">Rezerwuj fotel</a></div></div></section>`;
+  return `<section class="section" data-block="cennik" id="cennik"><div class="container">${head}
+    <div class="grid-3">${SERVICES.map(x=>`<div class="card price-card reveal service-panel-host" tabindex="0">
+      ${s===STYLES.s7?s7Character(x):''}
+        <div class="price-card__front">
+          ${x.hot?'<span class="badge">Najczęściej wybierane</span>':''}
+          <div>
+            <div class="from">cena</div>
+            <h3>${x.n}</h3>
+            <div class="price">${x.p}</div>
+          </div>
+          <p class="desc">${x.d}</p>
+        </div>${servicePanel(x)}
+    </div>`).join('')}</div>
+    <div class="center" style="margin-top:44px"><a class="btn btn--primary" href="#rezerwacja">Umów wizytę</a></div></div></section>`;
+};
+
+/* ---- ZESPÓŁ — AUTORYTET: konkretne specjalizacje, certyfikaty,
+   lata praktyki. Twarze budują relację jeszcze przed wizytą. ---- */
+R.team = ()=>`<section class="section section--alt" data-block="zespol" id="zespol"><div class="container">
+  <div class="sec-head center reveal"><span class="kicker">Zespół</span><h2>Eksperci, którym zaufasz</h2>
+  <p class="sub">Każdy z nas ma swoją specjalizację — dzięki temu trafiasz zawsze do właściwych rąk.</p></div>
+  <div class="grid-4">${TEAM.map(t=>`<div class="card team-card reveal">
+    <img src="${t.img}" alt="${t.n} — ${t.r}"><h3>${t.n}</h3><div class="role">${t.r}</div>
+    <p class="bio">${t.b}</p><span class="cert">✓ ${t.c}</span></div>`).join('')}</div></div></section>`;
+
+/* ---- OPINIE — SOCIAL PROOF + STORYTELLING: historie klientek
+   ("case studies"), w które łatwo się wczuć. 3 warianty layoutu. ---- */
+R.reviews = (s,variant)=>{
+  const head=`<div class="sec-head center reveal"><span class="kicker">Opinie</span><h2>Historie naszych klientek i klientów</h2>
+    <p class="sub">Średnia ocena 4.9/5 z 640 opinii w Google i Booksy.</p></div>`;
+  const one=r=>`<div class="card review"><span class="stars">${stars(r.s)}</span>
+    <p class="txt">„${r.t}”</p><div class="who"><img src="${r.img}" alt="Zdjęcie: ${r.n}">
+    <div><div class="nm">${r.n}</div><div class="meta">${r.m}</div></div></div></div>`;
+  if(variant==='grid') return `<section class="section" data-block="opinie"><div class="container">${head}
+    <div class="grid-2">${REVIEWS.map(r=>`<div class="reveal">${one(r)}</div>`).join('')}</div></div></section>`;
+  if(variant==='big') return `<section class="section" data-block="opinie"><div class="container">${head}
+    <div class="carousel reveal" data-carousel><div class="carousel__track">
+    ${REVIEWS.map(r=>`<div class="carousel__slide"><div class="review review--big">
+      <span class="stars">${stars(r.s)}</span><p class="txt">„${r.t}”</p>
+      <div class="who"><img src="${r.img}" alt=""><div><div class="nm">${r.n}</div><div class="meta">${r.m}</div></div></div></div></div>`).join('')}
+    </div><div class="carousel__nav"><button data-prev aria-label="Poprzednia opinia">←</button><button data-next aria-label="Następna opinia">→</button></div></div></div></section>`;
+  return `<section class="section" data-block="opinie"><div class="container">${head}
+    <div class="carousel reveal" data-carousel style="max-width:760px;margin-inline:auto"><div class="carousel__track">
+    ${REVIEWS.map(r=>`<div class="carousel__slide">${one(r)}</div>`).join('')}
+    </div><div class="carousel__nav"><button data-prev aria-label="Poprzednia opinia">←</button><button data-next aria-label="Następna opinia">→</button></div></div></div></section>`;
+};
+
+/* ---- LICZBY — SOCIAL PROOF w pigułce; animowane liczniki
+   przyciągają wzrok i "udowadniają" skalę. ---- */
+R.stats = ()=>`<section class="section stats" data-block="statystyki"><div class="container">
+  <div class="grid-4">${STATS.map(x=>`<div class="stat reveal"><div class="num" data-count="${x.v}" data-dec="${x.dec||0}" data-suf="${x.suf}">0</div><div class="lbl">${x.l}</div></div>`).join('')}</div></div></section>`;
+
+/* ---- PROMOCJA + ODLICZANIE — SCARCITY & URGENCY (limit czasu,
+   limit miejsc) + WZAJEMNOŚĆ (prezent/zniżka na start w S2/S4). ---- */
+R.promo = (s)=>{
+  const c=s.copy;
+  return `<section class="section promo" data-block="promocja"><div class="container">
+    <div class="card reveal"><span class="kicker">Oferta limitowana</span><h2>${c.promoT}</h2>
+    <p style="margin-inline:auto;color:var(--muted)">${c.promoX}</p>
+    <div class="countdown" data-countdown>
+      <div class="cd-box"><b data-d>00</b><span>dni</span></div>
+      <div class="cd-box"><b data-h>00</b><span>godz</span></div>
+      <div class="cd-box"><b data-m>00</b><span>min</span></div>
+      <div class="cd-box"><b data-s>00</b><span>sek</span></div></div>
+    <a class="btn btn--primary" href="#rezerwacja">Rezerwuję z rabatem</a>
+    <p class="slots">Na ten tydzień zostały <b data-slots>4</b> wolne terminy</p></div></div></section>`;
+};
+
+/* ---- BLOG — świeże treści = wiarygodność i powód do powrotu ---- */
+R.blog = ()=>`<section class="section section--alt" data-block="blog"><div class="container">
+  <div class="sec-head center reveal"><span class="kicker">Blog</span><h2>Trendy i porady</h2></div>
+  <div class="grid-3">${BLOG.map(b=>`<article class="card blog-card reveal"><img src="${b.img}" alt="">
+    <div class="bd"><span class="date">${b.d}</span><h3>${b.t}</h3><p>${b.x}</p>
+    <a href="#" onclick="return false">Czytaj dalej →</a></div></article>`).join('')}</div></div></section>`;
+
+/* ---- INSTAGRAM — wizualny social proof, żywy salon "tu i teraz" ---- */
+R.ig = ()=>`<section class="section" data-block="instagram"><div class="container">
+  <div class="sec-head center reveal"><span class="kicker">Instagram</span><h2>@salon.na.instagramie</h2>
+  <p class="sub">Codzienna dawka metamorfoz — dołącz do 18 tys. obserwujących.</p></div>
+  <div class="ig-grid reveal">${[IMG.styling1,IMG.styling2,IMG.styling3,IMG.w6,IMG.w7,IMG.salon1].map(i=>`<a href="#" onclick="return false" aria-label="Post na Instagramie"><img src="${i}" alt="Fryzura z naszego Instagrama"></a>`).join('')}</div></div></section>`;
+
+/* ---- FAQ — rozbraja obiekcje przed rezerwacją (mniej barier = 
+   więcej konwersji); odpowiedź o darmowej konsultacji = WZAJEMNOŚĆ ---- */
+R.faq = ()=>`<section class="section section--alt" data-block="faq"><div class="container">
+  <div class="sec-head center reveal"><span class="kicker">FAQ</span><h2>Częste pytania</h2></div>
+  <div class="faq reveal">${FAQ.map(f=>`<details><summary>${f.q}</summary><div class="a">${f.a}</div></details>`).join('')}</div></div></section>`;
+
+/* ---- REZERWACJA — główny punkt konwersji. Obok formularza
+   WZAJEMNOŚĆ: darmowa konsultacja / -10% na start. ---- */
+R.booking = (s)=>{
+  const c=s.copy;
+  return `<section class="section booking" data-block="rezerwacja" id="rezerwacja"><div class="container">
+    <div class="reveal"><span class="kicker">Rezerwacja</span><h2>Umów swoją wizytę</h2>
+    <p style="color:var(--muted)">Wypełnij formularz — oddzwonimy w ciągu 2 godzin (w godzinach pracy), aby potwierdzić termin. Możesz też po prostu zadzwonić: <b style="color:var(--accent)">${CONTACT.tel}</b>.</p>
+    <div class="gift"><span class="ico">🎁</span><span><b>Bonus na start:</b> pierwsza wizyta z bezpłatną konsultacją i <b>−10%</b> na dowolną usługę.</span></div></div>
+    <form class="form reveal" data-booking novalidate>
+      <div><label for="f-name">Imię i nazwisko</label><input id="f-name" required placeholder="Anna Kowalska"></div>
+      <div><label for="f-tel">Telefon</label><input id="f-tel" type="tel" required placeholder="+48 ___ ___ ___"></div>
+      <div><label for="f-srv">Usługa</label><select id="f-srv">${SERVICES.map(x=>`<option>${x.n}</option>`).join('')}</select></div>
+      <div><label for="f-date">Preferowany termin</label><input id="f-date" type="date"></div>
+      <div class="full"><label for="f-msg">Wiadomość (opcjonalnie)</label><textarea id="f-msg" rows="3" placeholder="np. mam włosy do pasa, zależy mi na sobocie rano"></textarea></div>
+      <div class="full"><button class="btn btn--primary" type="submit" style="width:100%">${c.cta1} →</button></div>
+      <p class="ok" data-ok>Dziękujemy! Twoja prośba o rezerwację została wysłana — odezwiemy się wkrótce. 💛</p>
+    </form></div></section>`;
+};
+
+/* ---- MAPA + GODZINY — konkret lokalizacji obniża próg decyzji ---- */
+R.map = ()=>`<section class="section section--alt map" data-block="mapa" id="kontakt"><div class="container">
+  <div class="reveal"><iframe title="Mapa dojazdu" loading="lazy"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=20.995%2C52.222%2C21.030%2C52.238&amp;layer=mapnik&amp;marker=52.2299%2C21.0122"></iframe></div>
+  <div class="hours reveal"><span class="kicker">Znajdź nas</span><h2>Lokalizacja i godziny</h2>
+  <p style="color:var(--muted);margin-bottom:20px">${CONTACT.addr}<br>2 minuty od DINO</p>
+  ${HOURS.map(h=>`<div class="row"><span>${h[0]}</span><b>${h[1]}</b></div>`).join('')}
+  <div class="btn-row"><a class="btn btn--ghost" href="tel:${CONTACT.tel.replace(/ /g,'')}">Zadzwoń do nas</a></div></div></div></section>`;
+
+/* ---- STOPKA — PEAK-END RULE: ostatnie wrażenie = wielkie CTA,
+   dopiero potem dane, newsletter (WZAJEMNOŚĆ: rabat za zapis). ---- */
+R.footer = (s)=>{
+  const c=s.copy;
+  return `<footer class="footer" data-block="stopka"><div class="container">
+    <div class="footer__cta reveal"><span class="kicker">${c.brand}</span><h2>${c.footT}</h2><p>${c.footX}</p>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn--primary" href="#rezerwacja">${c.cta1}</a>
+    <a class="btn btn--ghost" href="tel:${CONTACT.tel.replace(/ /g,'')}">Zadzwoń: ${CONTACT.tel}</a></div></div>
+    <div class="footer__cols">
+      <div><h4>${c.brand}</h4><p style="color:var(--muted);font-size:.94rem">${CONTACT.addr}<br>${CONTACT.tel}${CONTACT.mail ? '<br>' + CONTACT.mail : ''}</p></div>
+      <div><h4>Menu</h4><ul><li><a href="#o-nas">O nas</a></li><li><a href="#cennik">Cennik</a></li><li><a href="#metamorfozy">Metamorfozy</a></li><li><a href="#rezerwacja">Rezerwacja</a></li></ul></div>
+      <div><h4>Social media</h4><ul><li><a href="#" onclick="return false">Instagram</a></li><li><a href="#" onclick="return false">Facebook</a></li><li><a href="#" onclick="return false">TikTok</a></li><li><a href="#" onclick="return false">Booksy</a></li></ul></div>
+      <div><h4>Newsletter</h4><p style="color:var(--muted);font-size:.9rem">Zapisz się i odbierz <b style="color:var(--accent)">−10%</b> na pierwszą wizytę.</p>
+      <form class="newsletter" data-news><input type="email" placeholder="Twój e-mail" aria-label="Adres e-mail" required><button type="submit">Zapisz</button></form></div></div>
+    <div class="footer__bar"><span>© 2026 ${c.brand}. Projekt demo agencji web design.</span><span>Polityka prywatności · Regulamin</span></div>
+  </div></footer>`;
+};
+
+/* ---- MARQUEE (S3) — dynamiczny pasek haseł/nagród ---- */
+R.marquee = ()=>{
+  const items='<span><em>✦</em>Koloryzacje kreatywne</span><span><em>✦</em>4.9★ w Google</span><span><em>✦</em>Salon Roku 2025</span><span><em>✦</em>5000+ metamorfoz</span><span><em>✦</em>Olaplex Expert</span>';
+  return `<div class="marquee" data-block="marquee"><div class="marquee__inner">${items}${items}</div></div>`;
+};
+</script>
+
+<script>
+/* ============================================================
+   SILNIK DEMO: zakładki, loader, render stylu, interakcje
+   ============================================================ */
+const app = document.getElementById('app');
+const loaderEl = document.getElementById('loader');
+const loaderTxt = document.getElementById('loaderTxt');
+const tabsEl = document.getElementById('tabs');
+
+/* --- zakładki w sticky headerze --- */
+Object.entries(STYLES).forEach(([id,s])=>{
+  const b=document.createElement('button');
+  b.className='tab'; b.textContent=s.name; b.dataset.id=id;
+  b.addEventListener('click',()=>{ if(document.body.dataset.style!==id) setStyle(id); });
+  tabsEl.appendChild(b);
+});
+
+/* --- budowa strony dla wybranego stylu --- */
+function render(id){
+  const s=STYLES[id];
+  app.innerHTML = s.order.map(entry=>{
+    const [name,variant]=entry.split(':');
+    return R[name] ? R[name](s,variant) : '';
+  }).join('');
+  document.title = `${s.copy.brand} — ${s.name} | Demo salonu fryzjerskiego`;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.id===id));
+}
+
+/* --- płynna zmiana stylu: fade-out → loader → nowy render → fade-in --- */
+function setStyle(id){
+  loaderTxt.textContent='Ładowanie nowego stylu: '+STYLES[id].name.split('·')[1].trim()+'…';
+  loaderEl.classList.add('on');
+  app.classList.add('hide');
+  setTimeout(()=>{
+    document.body.dataset.style=id;
+    render(id);
+    window.scrollTo({top:0,behavior:'instant'});
+    initInteractions();
+    setTimeout(()=>{ loaderEl.classList.remove('on'); app.classList.remove('hide'); },420);
+  },520);
+}
+
+/* ============================================================
+   INTERAKCJE (wywoływane po każdym renderze)
+   ============================================================ */
+let revealObs=null, carouselTimers=[], countdownTimer=null;
+
+function initInteractions(){
+  /* --- 1. Fade-in przy scrollu (subtelny efekt "zachwytu") --- */
+  if(revealObs) revealObs.disconnect();
+  revealObs=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add('in'); revealObs.unobserve(e.target); }
+  }),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+  /* --- 2. Animowane liczniki statystyk (social proof w ruchu) --- */
+  const cntObs=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el=e.target, target=parseFloat(el.dataset.count), dec=+el.dataset.dec, suf=el.dataset.suf||'';
+    const t0=performance.now(), dur=1600;
+    (function tick(t){
+      const p=Math.min((t-t0)/dur,1), eased=1-Math.pow(1-p,3);
+      el.textContent=(target*eased).toFixed(dec).replace('.',',')+suf;
+      if(p<1) requestAnimationFrame(tick);
+    })(t0);
+    cntObs.unobserve(el);
+  }),{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(el=>cntObs.observe(el));
+
+  /* --- 3. Suwak Przed/Po (efekt kontrastu — angażująca interakcja) --- */
+  document.querySelectorAll('.ba').forEach(ba=>{
+    ba.querySelector('.ba__range').addEventListener('input',e=>{
+      ba.style.setProperty('--pos',e.target.value+'%');
+    });
+  });
+
+  /* --- 3b. Panele usług: hover desktop, tap mobile --- */
+  const touchLayout=window.matchMedia('(hover: none), (max-width: 860px)').matches;
+  document.querySelectorAll('.service-panel-host').forEach(host=>{
+    if(!touchLayout) return;
+    host.addEventListener('click',e=>{
+      if(e.target.closest('.service-panel__cta')) return;
+      const open=host.classList.contains('is-open');
+      document.querySelectorAll('.service-panel-host.is-open').forEach(item=>item.classList.remove('is-open'));
+      if(!open) host.classList.add('is-open');
+    });
+    host.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key===' '){
+        e.preventDefault();
+        const open=host.classList.contains('is-open');
+        document.querySelectorAll('.service-panel-host.is-open').forEach(item=>item.classList.remove('is-open'));
+        if(!open) host.classList.add('is-open');
+      }
+      if(e.key==='Escape') host.classList.remove('is-open');
+    });
+  });
+
+  /* --- 4. Karuzela opinii (auto-przewijanie + strzałki) --- */
+  carouselTimers.forEach(clearInterval); carouselTimers=[];
+  document.querySelectorAll('[data-carousel]').forEach(c=>{
+    const track=c.querySelector('.carousel__track'), n=track.children.length;
+    let i=0;
+    const go=d=>{ i=(i+d+n)%n; track.style.transform=`translateX(-${i*100}%)`; };
+    c.querySelector('[data-prev]').addEventListener('click',()=>go(-1));
+    c.querySelector('[data-next]').addEventListener('click',()=>go(1));
+    carouselTimers.push(setInterval(()=>go(1),6500));
+  });
+
+  /* --- 5. Licznik promocji (URGENCY: realne odliczanie do końca oferty)
+         + malejąca liczba wolnych terminów (SCARCITY) --- */
+  if(countdownTimer) clearInterval(countdownTimer);
+  const cd=document.querySelector('[data-countdown]');
+  if(cd){
+    const end=Date.now()+1000*60*60*38+1000*60*24; // demo: ~1,5 doby
+    const pad=x=>String(x).padStart(2,'0');
+    const paint=()=>{
+      let ms=Math.max(end-Date.now(),0), s=Math.floor(ms/1000);
+      cd.querySelector('[data-d]').textContent=pad(Math.floor(s/86400));
+      cd.querySelector('[data-h]').textContent=pad(Math.floor(s%86400/3600));
+      cd.querySelector('[data-m]').textContent=pad(Math.floor(s%3600/60));
+      cd.querySelector('[data-s]').textContent=pad(s%60);
+    };
+    paint(); countdownTimer=setInterval(paint,1000);
+  }
+
+  /* --- 6. Delikatny parallax zdjęcia hero --- */
+  const pImg=document.querySelector('[data-parallax]');
+  if(pImg){
+    window.onscroll=()=>{ const y=window.scrollY; if(y<window.innerHeight) pImg.style.transform=`translateY(${y*.18}px) scale(1.06)`; };
+  } else window.onscroll=null;
+
+  /* --- 7. Formularze (demo: potwierdzenie bez backendu) --- */
+  const bk=document.querySelector('[data-booking]');
+  if(bk) bk.addEventListener('submit',e=>{
+    e.preventDefault();
+    if(!bk.querySelector('#f-name').value.trim()||!bk.querySelector('#f-tel').value.trim()){
+      bk.querySelector('#f-name').reportValidity(); return;
+    }
+    bk.querySelector('[data-ok]').style.display='block';
+    bk.querySelector('button[type=submit]').textContent='Wysłano ✓';
+  });
+  const nw=document.querySelector('[data-news]');
+  if(nw) nw.addEventListener('submit',e=>{
+    e.preventDefault();
+    nw.innerHTML='<p style="color:var(--accent);font-weight:600">Dziękujemy! Kod rabatowy −10% wysłaliśmy na Twój e-mail. ✓</p>';
+  });
+}
+
+/* --- start: Styl 1 --- */
+render('s1');
+initInteractions();
+</script>
+</body>
+</html>
